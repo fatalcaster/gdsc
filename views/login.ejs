@@ -1,0 +1,20 @@
+<nav>
+    <a href="/"><img src="./img/logo.svg" alt=""></a>
+</nav>
+<div class="post-container">
+    <div class="post form">
+        <form method="post">
+            <h1 class="title">Log In</h1>
+            <input class="title-input" name="email" type="email" placeholder="email...">
+            <hr>
+            <input class="title-input" name="password" type="password" placeholder="password...">
+            <hr>
+            <div class="submit-container">
+                <% if ( errors ) { %>
+                    <p class="error"><%= erros %></p>
+                <% } %>
+                <button onsubmit="" class="submit-button">Log In</button>
+            </div>
+        </form>   
+    </div>
+</div>
