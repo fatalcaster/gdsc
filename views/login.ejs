@@ -9,9 +9,9 @@
             <hr>
             <input class="title-input" name="password" type="password" placeholder="password...">
             <hr>
-            <div class="submit-container">
-                <% if ( errors ) { %>
-                    <p class="error"><%= erros %></p>
+            <div class="submit-container">    
+                <% if ( typeof errors !== "undefined" ) { %>
+                    <p class="error"><%= errors %></p>
                 <% } %>
                 <button onsubmit="" class="submit-button">Log In</button>
             </div>

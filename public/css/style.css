@@ -5,7 +5,7 @@
     --light-800: #F2F2F2;
     --dark-800: #7e7e7e;
     --dark-900: #474747;
-    --warning-500: #ff0f0f;
+    --warning-500: red;
   }
 
 body {
@@ -108,9 +108,6 @@ a:hover {
     object-fit: cover;
     backdrop-filter: blur(10px);
     z-index: 1;
-    filter: var(--dark-800); 
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
 }
 
 .info-bar {
@@ -170,8 +167,8 @@ i {
 }
 .submit-container {
     display: flex;
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
     justify-content: center;
 }
 .submit-button:hover {
@@ -192,8 +189,14 @@ i {
 .form > h1 {
     margin-bottom: 1rem;
 }
+#image-input {
+    display: none;
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .error {
-    display: block;
-    padding: 0;
     color: var(--warning-500);
 }

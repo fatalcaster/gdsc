@@ -7,16 +7,21 @@
     </div>
 </nav>
 <div class="post-container">
-    <div class="post" id="ewu212421421">
-        <input class="title-input" type="text" placeholder="Title...">
-        <hr>
-        <div class="post-body">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Body..."></textarea>
+    <form action="/create" method="post">
+        <div class="post" id="ewu212421421">
+            <input class="title-input" name="title" type="text" placeholder="Title...">
+            <hr>
+            <div class="post-body">
+                <textarea name="body" id="" cols="30" rows="10" placeholder="Body..."></textarea>
+            </div>
+            <div class="info-bar">
+                <label class="like-btn" for="image-input">
+                    Image +
+                </label>
+                <input name="image-input" id="image-input" class="like-btn" type="file">
+                <p id="date">dd/mm/yyyy</p>
+            </div>
         </div>
-        <div class="info-bar">
-            <a class="like-btn">Image +</a>
-            <p class="date">dd/mm/yyyy</p>
-        </div>
-    </div>
-    <button class="submit-button">Create Post +</button>
+        <button class="submit-button">Create Post +</button>
+    </form>
 </div>

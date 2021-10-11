@@ -54,7 +54,15 @@ const getParent = (element) => {
     return element.parentElement;
 }
 
-
-const logIn = async () => {
-
+const getDate = () => {
+    const p = new Date();
+    const day = p.getDate();
+    const month = p.getMonth();
+    const year = p.getFullYear();
+    console.log(day);
+    console.log(month);
+    return `${day}/${month+1}/${year}`;
 }
+
+document.getElementById("date")?.textContent = getDate();
+
