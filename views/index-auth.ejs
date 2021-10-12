@@ -1,0 +1,28 @@
+<nav>
+    <a href="/"><img src="./img/logo.svg" alt="" /></a>
+    <div>
+      <a href="/create">Create a Post</a>
+      <i>|</i>
+      <a href="">Log Out</a>
+    </div>
+</nav>
+<div class="post-container">
+    <% posts.forEach(post => { %>
+        <div class="post" id="<%= post.id %>">
+            <h1 class="title"><%= post.title %></h1>
+            <hr>
+            <div class="post-body">
+                <% if ( post.imgLink ) { %>
+                <img class="data" src="<%= post.imgLink %>" alt="">
+                <% } %>
+                <p><%= post.body %></p>
+            </div>
+            <div class="info-bar">
+                <a onclick="like(this)" class="like-btn"><%= post.likes %></a>
+                <p class="date"><%= post.createdAt %></p>
+            </div>
+        </div>
+      <% }) %>
+    </div>
+    
+</div>

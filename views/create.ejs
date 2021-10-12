@@ -1,27 +1,32 @@
 <nav>
-    <a href="/"><img src="./img/logo.svg" alt=""></a>
-    <div>
-        <a href="">Create a Post</a>
-        <i>|</i>
-        <a href="">Log Out</a>
-    </div>
+  <a href="/"><img src="./img/logo.svg" alt="" /></a>
+  <a href="">Log Out</a>
 </nav>
 <div class="post-container">
-    <form action="/create" method="post">
-        <div class="post" id="ewu212421421">
-            <input class="title-input" name="title" type="text" placeholder="Title...">
-            <hr>
-            <div class="post-body">
-                <textarea name="body" id="" cols="30" rows="10" placeholder="Body..."></textarea>
-            </div>
-            <div class="info-bar">
-                <label class="like-btn" for="image-input">
-                    Image +
-                </label>
-                <input name="image-input" id="image-input" class="like-btn" type="file">
-                <p id="date">dd/mm/yyyy</p>
-            </div>
-        </div>
-        <button class="submit-button">Create Post +</button>
-    </form>
+  <form action="/create" method="post">
+    <div class="post">
+      <input
+        class="title-input"
+        name="title"
+        type="text"
+        placeholder="Title..."
+      />
+      <hr />
+      <div class="post-body">
+        <textarea
+          name="body"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Body..."
+        ></textarea>
+      </div>
+      <div class="info-bar">
+        <label class="like-btn" for="imgLink"> Image + </label>
+        <input name="imgLink" id="imgLink" class="like-btn" type="file" />
+        <p id="date">dd/mm/yyyy</p>
+      </div>
+    </div>
+    <button class="submit-button">Create Post +</button>
+  </form>
 </div>
